@@ -3,6 +3,8 @@ from lightfm import LightFM
 from scipy import sparse
 from scipy.sparse import csr_matrix
 import numpy as np
+import json
+import pickle
 
 def create_interaction_matrix(df,user_col, item_col, rating_col, norm= False, threshold = None):
     '''
@@ -125,7 +127,7 @@ def get_recs(model, interactions, user_id, user_dict,
     return scores
 
 def generate_interactions():
-    recdata = pd.read_csv(r'recommendation_app\data\recdata.csv', index_col = 0)
+    recdata = pd.read_csv(r'backend-engine-main\recommendation_app\data\recdata.csv', index_col = 0)
     interactions = create_interaction_matrix(df = recdata,
                                          user_col = 'uid',
                                          item_col = 'id',
@@ -133,5 +135,11 @@ def generate_interactions():
     return interactions
 
 def get_gamesdata():
-    gamesdata = pd.read_csv(r'recommendation_app\data\gamesdata.csv', index_col = 0)
+    gamesdata = pd.read_csv(r'backend-engine-main\recommendation_app\data\gamesdata.csv', index_col = 0)
     return gamesdata
+
+
+def export_recommendations(recommendations):
+
+    with open(r"backend-engine-main\recommendation_app\data\recommendations.txt", "wb") as file:
+        pickle.dump(recommendations, file)
