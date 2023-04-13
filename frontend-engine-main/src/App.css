@@ -13,7 +13,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #1a1a1a;
-  color: #ffffff;
+  color: #000000;
 }
 
 .App {
@@ -27,7 +27,7 @@ body {
 }
 
 h1 {
-  color: #0d6efd;
+  color: #66c0f4;
   margin-bottom: 1rem;
 }
 
