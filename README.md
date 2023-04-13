@@ -93,9 +93,15 @@ The frontend is integrated with the OpenAI API to provide additional information
 
 ## Sources:
 · https://github.com/nadinezab/video-game-recs
+<p>
 · https://github.com/haohe1113/Steam-Game-Rcmd-Engine
+<p>
 · https://github.com/abvnithish/Steam_Game_Recommendation_System
+<p>
 · https://python.plainenglish.io/recommendation-engine-with-steam-video-games-dataset-98582c11af69
+<p>
 · https://audreygermain.github.io/Game-Recommendation-System/
+<p>
 · https://towardsdatascience.com/building-a-game-recommendation-engine-870a1ccd11c4
+<p>
 · https://towardsdatascience.com/steam-recommendation-systems-4358917288eb
