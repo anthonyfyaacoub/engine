@@ -68,4 +68,9 @@ Steamspy api -> [https://partner.steamgames.com/doc/webapi](https://steamspy.com
 
 Project:
 
-Porject Template -> https://github.com/miguelgfierro/project_template
+Project Template -> https://github.com/miguelgfierro/project_template
+
+
+# Sources:
+
+· https://github.com/nadinezab/video-game-recs
