@@ -58,27 +58,3 @@ yarn
 yarn dev
 Open your browser and navigate to http://localhost:3000.
 Enter a Steam user ID and click "Get Recommendations" to see the recommended games.
-
-
-# Important Links 
-
-APIs:
-
-Steamspy api -> [https://partner.steamgames.com/doc/webapi](https://steamspy.com/api.php)
-
-Project:
-
-Project Template -> https://github.com/miguelgfierro/project_template
-
-
-# Sources:
-
-· https://github.com/nadinezab/video-game-recs
-<p>
-· https://github.com/haohe1113/Steam-Game-Rcmd-Engine
-<p>
-· https://github.com/abvnithish/Steam_Game_Recommendation_System
-<p>
-· https://medium.com/@isabel.susan.joseph/steam-recommendation-system-5d40fe6a0e26
-<p>
-· https://towardsdatascience.com/steam-recommendation-systems-4358917288eb
