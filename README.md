@@ -91,6 +91,14 @@ The backend is built using Flask and is responsible for serving the trained mode
 ## OpenAI API Integration
 The frontend is integrated with the OpenAI API to provide additional information and insights about the recommended games. This includes generating game descriptions, reviews, and other relevant information.
 
+## Preview
+### Homepage
+![image](https://user-images.githubusercontent.com/55255975/231901447-8607f96e-e1d6-42bd-bb31-8f2a4d7659cd.png)
+
+### Recommenders + Chatbot
+![image](https://user-images.githubusercontent.com/55255975/231901145-5acc5d4b-1ce4-4e07-a61b-02f72a900900.png)
+
+
 ## Sources:
 · https://github.com/nadinezab/video-game-recs
 <p>
