@@ -3,10 +3,10 @@
     bottom: 20px;
     right: 20px;
   }
-  
+    
   .formContainer {
-    width: 400%;
-    height: 300%;
+    width: 400px;
+    height: auto;
     position: absolute;
     bottom: 110px;
     right: 0;
@@ -15,3 +15,4 @@
     border-radius: 10px;
     padding: 20px;
   }
+  

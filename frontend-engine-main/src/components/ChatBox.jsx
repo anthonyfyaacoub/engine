@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 const Chatbox = () => {
   const [userMessage, setUserMessage] = useState('');
-  const [input, setInput] = useState('');
   const [conversationHistory, setConversationHistory] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
@@ -40,7 +39,6 @@ const Chatbox = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     sendMessage(event);
-    setInput('');
   };
 
   return (
@@ -54,7 +52,7 @@ const Chatbox = () => {
           type="text"
           placeholder="Type your message"
           value={userMessage}
-          onChange={(e) => setInput(e.target.value)}
+          onChange={(e) => setUserMessage(e.target.value)} // Update userMessage state instead of input
         />
         <button type="submit" disabled={isLoading}>
           Send
