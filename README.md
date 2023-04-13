@@ -54,8 +54,8 @@ python backend/app.py
 bash
 Copy code
 cd frontend
-npm install
-npm start
+yarn
+yarn dev
 Open your browser and navigate to http://localhost:3000.
 Enter a Steam user ID and click "Get Recommendations" to see the recommended games.
 
