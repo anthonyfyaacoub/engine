@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import ChatBotContainer from './components/SteamyContainer';
+import SteamyContainer from './components/SteamyContainer';
 
 function App() {
   return (
     <div className="App">
-      {/* Your other components */}
-      <ChatBotContainer />
+      <img src="./Steam_h.jpg"/>
+      <SteamyContainer />
     </div>
   );
 }

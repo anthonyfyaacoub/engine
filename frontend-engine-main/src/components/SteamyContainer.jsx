@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import ChatbotBubble from './SteamyBubble';
+import SteamyBubble from './SteamyBubble';
 import RecommendationForm from './RecommendationForm';
-import styles from './ChatBotContainer.module.css';
+import styles from './SteamyContainer.module.css';
 
-const ChatBotContainer = () => {
+const SteamyContainer = () => {
   const [isFormVisible, setIsFormVisible] = useState(false);
 
   const handleBubbleClick = () => {
@@ -12,9 +12,10 @@ const ChatBotContainer = () => {
 
   return (
     <div className={styles.chatBotContainer}>
-      <ChatbotBubble onClick={handleBubbleClick} />
+      <SteamyBubble onClick={handleBubbleClick} />
       {isFormVisible && (
         <div className={styles.formContainer}>
+          <h1>Recommender</h1>
           <RecommendationForm />
         </div>
       )}
@@ -22,4 +23,4 @@ const ChatBotContainer = () => {
   );
 };
 
-export default ChatBotContainer;
+export default SteamyContainer;

@@ -3,7 +3,6 @@ html {
   background-color: #1a1a1a;
 }
 
-
 body {
   display: flex;
   justify-content: center;
@@ -22,6 +21,9 @@ body {
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
+  background-image: "frontend-engine-main/src/Steam_h.jpg";
+  background-size: cover;
+  background-position: center;
 }
 
 h1 {

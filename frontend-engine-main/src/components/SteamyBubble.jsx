@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './ChatbotBubble.module.css';
+import styles from './SteamyBubble.module.css';
 
-const ChatbotBubble = ({ onClick }) => {
+const SteamyBubble = ({ onClick }) => {
   return (
     <div className={styles.chatbotBubbleContainer} onClick={onClick}>
       <div className={styles.chatbotBubble}>
@@ -11,4 +11,4 @@ const ChatbotBubble = ({ onClick }) => {
   );
 };
 
-export default ChatbotBubble;
+export default SteamyBubble;
