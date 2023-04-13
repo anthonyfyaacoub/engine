@@ -4,6 +4,7 @@ const Chatbox = () => {
   const [userMessage, setUserMessage] = useState('');
   const [conversationHistory, setConversationHistory] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [input, setInput] = useState('');
 
   const sendMessage = async (e) => {
     e.preventDefault();
@@ -11,7 +12,7 @@ const Chatbox = () => {
 
     setIsLoading(true);
     setConversationHistory((prevHistory) => `${prevHistory}\nUser: ${userMessage}`);
-
+    console.log(conversationHistory)
     try {
       const response = await fetch('http://127.0.0.1:5000/chat', {
         method: 'POST',
@@ -24,7 +25,7 @@ const Chatbox = () => {
       const data = await response.json();
 
       if (data.response) {
-        setConversationHistory((prevHistory) => `${prevHistory}\nExpert: ${data.response}`);
+        setConversationHistory((prevHistory) => `${prevHistory}\nSystem: ${data.response}`);
       } else {
         setConversationHistory((prevHistory) => `${prevHistory}\nError: ${data.error}`);
       }

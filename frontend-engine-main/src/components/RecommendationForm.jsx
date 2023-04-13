@@ -66,7 +66,7 @@ function RecommendationForm({onReceiveData}) {
           ) : recommendations.length > 0 ? (
             <ul>
               {recommendations.map((game, index) => (
-                <li key={index}>{game}</li>
+                <li key={index} className="recommended-game">{game}</li>
               ))}
             </ul>
           ) : (
