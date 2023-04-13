@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function RecommendationForm() {
+function RecommendationForm(onReceiveData) {
   const [input, setInput] = useState('');
   const [recommendations, setRecommendations] = useState([]);
   const [error, setError] = useState('');
@@ -25,6 +25,7 @@ function RecommendationForm() {
       } else {
         setError('');
         setRecommendations(data.recommendations);
+        onReceiveData(data.recommendations);
       }
     } catch (error) {
       console.error('Error fetching recommendations:', error);
