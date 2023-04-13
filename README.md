@@ -27,7 +27,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/steam-recommendation-engine.git
+git clone https://github.com/JPBP22/steam-recommendation-engine.git
 Navigate to the project directory:
 
 bash
