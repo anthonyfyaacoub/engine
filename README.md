@@ -66,8 +66,8 @@ In a new terminal, navigate to the frontend directory and start the frontend ser
 bash
 Copy code
 cd frontend
-npm install
-npm start
+yarn
+yarn dev
 Open your browser and navigate to http://localhost:3000 to start using the recommendation engine.
 
 ## API
