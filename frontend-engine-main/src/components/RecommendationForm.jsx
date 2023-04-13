@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 
-function RecommendationForm(onReceiveData) {
+function RecommendationForm({onReceiveData}) {
   const [input, setInput] = useState('');
   const [recommendations, setRecommendations] = useState([]);
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [user, setUser] = useState([]);
+
+  const sendDataToParent = (data) => {
+    onReceiveData(data);
+  };
 
   const fetchRecommendations = async () => {
     setIsLoading(true);
@@ -25,7 +29,8 @@ function RecommendationForm(onReceiveData) {
       } else {
         setError('');
         setRecommendations(data.recommendations);
-        onReceiveData(data.recommendations);
+        sendDataToParent(data.recommendations);
+        //onReceiveData(data.recommendations);
       }
     } catch (error) {
       console.error('Error fetching recommendations:', error);

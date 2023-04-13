@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const Chatbox = () => {
   const [userMessage, setUserMessage] = useState('');
+  const [input, setInput] = useState('');
   const [conversationHistory, setConversationHistory] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
@@ -36,18 +37,24 @@ const Chatbox = () => {
     setUserMessage('');
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    sendMessage(event);
+    setInput('');
+  };
+
   return (
     <div>
       <h2>Chatbot</h2>
       <div style={{ whiteSpace: 'pre-wrap', background: 'lightgray', minHeight: '200px', maxHeight: '400px', overflowY: 'auto' }}>
         {conversationHistory}
       </div>
-      <form onSubmit={sendMessage}>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Type your message"
           value={userMessage}
-          onChange={(e) => setUserMessage(e.target.value)}
+          onChange={(e) => setInput(e.target.value)}
         />
         <button type="submit" disabled={isLoading}>
           Send

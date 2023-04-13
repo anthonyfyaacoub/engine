@@ -18,7 +18,7 @@ const SteamyContainer = () => {
   };
 
 
-  return (
+  return (  
     <div className={styles.chatBotContainer}>
       <SteamyBubble onClick={handleBubbleClick} />
       {isFormVisible && (
