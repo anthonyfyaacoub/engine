@@ -74,3 +74,7 @@ Project Template -> https://github.com/miguelgfierro/project_template
 # Sources:
 
 · https://github.com/nadinezab/video-game-recs
+· https://github.com/haohe1113/Steam-Game-Rcmd-Engine
+· https://github.com/abvnithish/Steam_Game_Recommendation_System
+· https://medium.com/@isabel.susan.joseph/steam-recommendation-system-5d40fe6a0e26
+· https://towardsdatascience.com/steam-recommendation-systems-4358917288eb
